@@ -8,12 +8,12 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @RestController
-public class AwsHelloApplication {
+public class TerraHelloApplication {
 
     private RestTemplate restTemplate = new RestTemplate();
 
     public static void main(String[] args) {
-        SpringApplication.run(AwsHelloApplication.class, args);
+        SpringApplication.run(TerraHelloApplication.class, args);
     }
 
     @RequestMapping("/")

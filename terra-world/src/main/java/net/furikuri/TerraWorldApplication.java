@@ -9,12 +9,12 @@ import java.util.Random;
 
 @SpringBootApplication
 @RestController
-public class AwsWorldApplication {
+public class TerraWorldApplication {
 
     private int randomValue = new Random().nextInt(100);
 
     public static void main(String[] args) {
-        SpringApplication.run(AwsWorldApplication.class, args);
+        SpringApplication.run(TerraWorldApplication.class, args);
     }
 
     @RequestMapping("/")
