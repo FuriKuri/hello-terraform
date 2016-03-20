@@ -21,3 +21,10 @@ resource "digitalocean_droplet" "docker" {
         ]
     }
 }
+
+resource "digitalocean_record" "terra" {
+    domain = "furikuri.net"
+    type = "A"
+    name = "terra"
+    value = "${digitalocean_droplet.docker.ipv4_address}"
+}
