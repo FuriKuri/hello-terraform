@@ -1,0 +1,11 @@
+world:
+  build: ./aws-world
+  ports:
+    - "8080"
+hello:
+  build: ./aws-hello
+  links:
+   - world
+  ports:
+    - "8080:8080"
+
