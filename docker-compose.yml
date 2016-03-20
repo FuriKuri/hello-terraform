@@ -1,9 +1,9 @@
 world:
-  build: ./aws-world
+  build: ./terra-world
   ports:
     - "8080"
 hello:
-  build: ./aws-hello
+  build: ./terra-hello
   links:
    - world
   ports:
