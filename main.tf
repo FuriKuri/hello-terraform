@@ -17,7 +17,7 @@ resource "digitalocean_droplet" "docker" {
     provisioner "remote-exec" {
         inline = [
            "docker run -d --name world furikuri/terra-world",
-           "docker run -d -p 8080:8080 --name hello --link world:world furikuri/terra-world",
+           "docker run -d -p 8080:8080 --name hello --link world:world furikuri/terra-hello",
         ]
     }
 }
